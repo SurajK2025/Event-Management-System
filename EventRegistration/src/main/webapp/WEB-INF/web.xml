@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee; http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>EventRegistration</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>ValidateAdmin</servlet-name>
+  	<servlet-class>com.userValidations.ValidateAdmin</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>RegisterUser</servlet-name>
+  	<servlet-class>com.userValidations.RegisterUser</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>ValidateUser</servlet-name>
+  	<servlet-class>com.userValidations.ValidateUser</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>SuccessfulLogin</servlet-name>
+  	<servlet-class>com.userValidations.SuccessfulLogin</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>ViewEvents</servlet-name>
+  	<servlet-class>com.eventManagement.ViewEvents</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>TransactionHis</servlet-name>
+  	<servlet-class>com.transactionManagement.TransactionHis</servlet-class>
+  </servlet>
+  
+</web-app>
